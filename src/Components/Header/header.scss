@@ -1,0 +1,77 @@
+@import "../SCSS/colors";
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 20px 10%;
+  width: 100%;
+       .logo {
+         font-size: 25px;
+         color: $color-white;
+         text-decoration: none;
+       }
+       .logo:hover {
+          background: linear-gradient(45deg ,#f06,#3cf);
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+       }
+      .navigation {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+
+        .icon-container {
+          display: none;
+          @media (max-width: 480px) {
+            display: flex;
+          }
+          .bars {
+            display: flex;
+            font-size: 20px;
+            color: $color-white;
+          }
+          @media (max-width: 480px) {
+            display: flex;
+          }
+        }
+          .container-link {
+            display: flex;
+            gap: 20px;
+            @media (max-width: 480px) {
+              position: absolute;
+              top: 90px;
+              left:20px;
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            }
+            .link {
+              color: $color-white;
+              text-decoration: none;
+              font-size: 20px;
+            }
+            .link:hover {
+              background: linear-gradient(45deg ,#f06,#3cf);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+            }
+
+          }
+        .link:hover {
+          background: linear-gradient(45deg ,#f06,#3cf);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+         .show {
+           display: flex;
+         }
+         .hide {
+           display: none;
+         }
+      }
+}
