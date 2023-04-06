@@ -8,6 +8,7 @@ const Header = () => {
     return (
         <>
             <header>
+
                 <Link className={"logo"} to={"/"}>Portfolio.</Link>
 
                 <nav className={"navigation"}>
@@ -17,12 +18,13 @@ const Header = () => {
                    </div>
 
                     <div className={isDisplay ? "container-link show" : "container-link"}>
-                        <Link className={"link"} to={"Skills"}>Skills</Link>
-                        <Link className={"link"} to={"Portfolio"}>Projects</Link>
-                        <Link className={"link"} to={"Contact"}>Contact</Link>
+                        <Link className={"link"}  style={{style: "--i:1;"}} to={"Skills"}>Skills</Link>
+                        <Link className={"link"} style={{style: "--i:2;"}} to={"Portfolio"}>Projects</Link>
+                        <Link className={"link"} style={{style: "--i:3;"}} to={"Contact"}>Contact</Link>
                     </div>
-
                 </nav>
+
+
             </header>
         </>
     )
